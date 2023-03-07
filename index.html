@@ -12,13 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" type="module"></script>
     <title>ToDoList</title>
   </head>
 
   <body>
     <header class="container-fluid my-5 text-center">
-      <h1>Ma ToDoList !</h1>
+      <h1>Ma ToDoList 📝</h1>
     </header>
 
     <main class="container" id="todolist">
@@ -35,9 +36,15 @@
 
       <section>
         <div class="btn-group mb-4">
-          <button class="btn btn-outline-primary active">Toutes</button>
-          <button class="btn btn-outline-primary">À faire</button>
-          <button class="btn btn-outline-primary">Faites</button>
+          <button class="btn btn-outline-primary active" data-filter="all">
+            Toutes
+          </button>
+          <button class="btn btn-outline-primary" data-filter="todo">
+            À faire
+          </button>
+          <button class="btn btn-outline-primary" data-filter="done">
+            Faites
+          </button>
         </div>
 
         <ul class="list-group">
